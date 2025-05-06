@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>ArcRunner</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #1a1a1a;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        #canvas {
+            width: 100%;
+            height: 100%;
+            max-width: 800px;
+            max-height: 600px;
+        }
+        #loading {
+            color: white;
+            font-family: Arial, sans-serif;
+            font-size: 24px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="loading">Loading ArcRunner...</div>
+    <canvas id="canvas"></canvas>
+    <script type="text/javascript" src="arcrunner.js"></script>
+    <script>
+        var engine = new Engine($GODOT_CONFIG);
+        engine.start();
+    </script>
+</body>
+</html> 
